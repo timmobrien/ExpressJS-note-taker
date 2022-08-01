@@ -30,7 +30,7 @@ Heroku Deployment: [https://timmobrien-express-note-taker.herokuapp.com/](https:
 No installation is required. Please visit the Heroku deployed application at: [https://timmobrien-express-note-taker.herokuapp.com/](https://timmobrien-express-note-taker.herokuapp.com/)
 
 ## Usage <a name="usage"></a>
-Navigate to the root folder and run the following command <br> `node server.js` <br> When the app is running, visit the localhost web-page outputted by the console log. Set-up is now complete, and new notes will be saved in the database.
+When the user arrives at the splash screen, they can click the button to continue to the notes page. Any new notes can be saved using the floppy disc icon in the top right corner. Notes will be saved into a database, where the user can view or delete them.
 
 ## License <a name="license"></a>
 [MIT](https://choosealicense.com/licenses/mit)
