@@ -18,33 +18,34 @@ function getNotes() {
 
 // Receives note content & saves it to db
 function saveNote(title, text) {
-    
+
+    // gives the note a custom ID using uuid
     const newNote = {
         id: uuid.v4(),
         title,
         text
     }
-    
+
     // add new note data to db.json
-    
+
     // retrieve the existing note data
     const notes = getNotes();
-    
+
     // push new note
     notes.push(newNote);
-    
+
     // re-save
     fs.writeFileSync(dbPath, JSON.stringify(notes), 'utf-8');
-    
+
     return newNote;
 }
 
 // Takes in note id & deletes it from db
 function deleteNote(id) {
-    
+
     // get the notes
     const notes = getNotes();
-    
+
     // filter out the note with the given id
     const filtered = notes.filter((note) => note.id !== id);
 
@@ -54,21 +55,21 @@ function deleteNote(id) {
 
 // when directed to /notes, get the previous notes
 router.get('/notes', (req, res) => {
-    
+
     const notes = getNotes();
     res.json(notes);
 });
 
 // creates new note
-router.post('/notes', (req,res) => {
+router.post('/notes', (req, res) => {
 
- const createdNote = saveNote(req.body.title, req.body.text);
+    const createdNote = saveNote(req.body.title, req.body.text);
 
- res.json(createdNote)
+    res.json(createdNote)
 })
 
 // deletes note based on id
-router.delete('/notes/:id', (req,res)=> {
+router.delete('/notes/:id', (req, res) => {
 
     deleteNote(req.params.id);
 
@@ -76,7 +77,7 @@ router.delete('/notes/:id', (req,res)=> {
         data: 'success'
     });
 
-}) 
+})
 
 // export the router
 module.exports = router;
