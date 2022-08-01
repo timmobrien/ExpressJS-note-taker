@@ -9,9 +9,9 @@
 
 ## Description <a name="description"></a>
 
-This tool allows users to write, save and delete notes. When the user launches the webpage, they are greeted with a welcome screen, before being able to continue into the note taking section. <br> GitHub URL: https://github.com/timmobrien/ExpressJS-note-taker
-
-GitHub URL: [https://github.com/timmobrien/ExpressJS-note-taker](https://github.com/timmobrien/ExpressJS-note-taker)
+This tool allows users to write, save and delete notes. When the user launches the webpage, they are greeted with a welcome screen, before being able to continue into the note taking section. <br>
+GitHub URL: [https://github.com/timmobrien/ExpressJS-note-taker](https://github.com/timmobrien/ExpressJS-note-taker) <br>
+Heroku Deployment: [https://timmobrien-express-note-taker.herokuapp.com/](https://timmobrien-express-note-taker.herokuapp.com/)
 
 ## Table of Contents
 1. [Title](#title)
@@ -24,12 +24,10 @@ GitHub URL: [https://github.com/timmobrien/ExpressJS-note-taker](https://github.
 
 5. [License](#license)
 
-6. [Tests](#tests)
-
-7. [Questions](#questions)
+6. [Questions](#questions)
 
 ## Installation <a name="installation"></a>
-Clone the repo to your machine using `git@github.com:/timmobrien/ExpressJS-note-taker` <br> Then run `$ npm install` 
+No installation is required. Please visit the Heroku deployed application at: [https://timmobrien-express-note-taker.herokuapp.com/](https://timmobrien-express-note-taker.herokuapp.com/)
 
 ## Usage <a name="usage"></a>
 Navigate to the root folder and run the following command <br> `node server.js` <br> When the app is running, visit the localhost web-page outputted by the console log. Set-up is now complete, and new notes will be saved in the database.
@@ -42,7 +40,6 @@ Copyright © 2022 [@timmobrien](https://github.com/timmobrien)
 ## Contributing <a name="contributing"></a>
 Pull requests are welcome.
 
-## Tests <a name="tests"></a>
 
 
 ## Questions <a name="questions"></a>
