@@ -1,10 +1,17 @@
+// Importing express
 const express = require('express');
+
+// Importing routes
 const webRoutes = require('./routes/web');
 const apiRoutes = require('./routes/api');
+
+// Adding env port OR static port
 const PORT = process.env.PORT || 3001;
 
+// Initialising express
 const app = express();
 
+// middleware to make the public files static
 app.use(express.static('public'));
 
 // Allows express to undersatand json req body
